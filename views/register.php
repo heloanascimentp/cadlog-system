@@ -18,7 +18,16 @@
 
             <label for="senha">Senha</label>
             <input type="password" name="senha" id="senha" required>
+
+            <label for="perfil">Perfil</label>
+            <select name="perfil" id="perfil">
+                <option value="admim">Admin</option>
+                <option value="gestor">Gestor</option>
+                <option value="colaborador">colaborador</option>
+            </select>
+            <button type="submit">Cadastrar </button>
         </form>
+        <a href="http://">Voltar ao login</a>
     </div>
 </body>
 </html>
