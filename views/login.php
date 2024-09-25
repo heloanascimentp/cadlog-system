@@ -19,7 +19,7 @@
             </section>
             <button type="submit"></button>
         </form>
-        <a href="">Cadastre-se</a>
+        <a href="index.php?action=register">Cadastre-se</a>
     </main>
 </body>
 </html>
