@@ -12,7 +12,7 @@ class Database{
             $password  = '';
 
             //a conexão usa o drive Mysql(mysql:), e as informaçãoes de host e BD 
-            self::$instance = new PDO("mysql:host=$host:dbname=$db",$user, $password);
+        self::$instance = new PDO("mysql:host=$host:dbname=$db", $user, $password);
 
             //define o modo de erro para exceções, facilitando a depuração e tratamento dos erros
             self::$instance->setAttribute (PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
