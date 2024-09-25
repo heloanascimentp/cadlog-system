@@ -10,7 +10,7 @@ $userController = new UserController();
 //$dashboardController = new DashboardController();
 
 // coleta a ação da URL, se não houver ação definida usa login como padrão
-$action = $_GET['action'] ?? 'login'; //usa operador de coalescencia nuça (??) para definir 'login' se 'action' não estiver presente 
+$action = $_GET['action'] ?? 'login'; //usa operador de coalescencia nula (??) para definir 'login' se 'action' não estiver presente 
 
 switch ($action){
     case 'login':

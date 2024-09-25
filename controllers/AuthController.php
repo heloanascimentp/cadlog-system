@@ -24,9 +24,12 @@ class AuthController
             }else{
                 include 'views/register.php';
             }
+        }else{
+            include 'views/login.php';
+        }
         
         }
     }
-}
+
 
 ?>
