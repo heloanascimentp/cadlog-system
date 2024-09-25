@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="views/style.css">
 </head>
 <body>
     <main>
@@ -18,7 +18,7 @@
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha">
             </section>
-            <button type="submit"></button>
+            <button type="submit">login</button>
         </form>
         <a href="index.php?action=register">Cadastre-se</a>
     </main>

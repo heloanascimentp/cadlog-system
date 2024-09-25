@@ -1,13 +1,12 @@
-/* Reset básico */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa; /* Azul claro */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,11 +14,11 @@ body {
 }
 
 main {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background-color: #ffffff; /* Branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Largura fixa para o formulário */
 }
 
 form {
@@ -28,51 +27,55 @@ form {
 }
 
 section {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     margin-bottom: 5px;
     font-weight: bold;
+    color: #5ed4f1; /* Verde-água */
 }
 
 input[type="email"],
 input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
+    padding: 12px;
+    border: 2px solid #00796b; /* Verde-água */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
 input[type="email"]:focus,
 input[type="password"]:focus {
-    border-color: #007bff;
+    border-color: #004d40; /* Verde-escuro */
     outline: none;
 }
 
 button {
-    padding: 10px;
-    background-color: #007bff;
+    background-color: #00796b; /* Verde-água */
     color: white;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
     font-size: 16px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #004d40; /* Verde-escuro */
 }
 
 a {
-    margin-top: 10px;
     display: block;
+    margin-top: 20px;
     text-align: center;
-    color: #007bff;
+    color: #00796b; /* Verde-água */
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #004d40; /* Verde-escuro */
 }
