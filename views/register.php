@@ -11,6 +11,7 @@
     <div>
         <h2>Cadastro de usuário </h2>
         <form action="index.php?action=register" method="post">
+            
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome" required>
 
