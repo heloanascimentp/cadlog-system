@@ -7,7 +7,7 @@ require 'controllers/DashboardController.php'; //Istancia o controlador de dashb
 //cria istâcia dos controladores para utilizar seus métodos
 $authController = new AuthController();
 $userController = new UserController();
-//$dashboardController = new DashboardController();
+$dashboardController = new DashboardController();
 
 // coleta a ação da URL, se não houver ação definida usa login como padrão
 $action = $_GET['action'] ?? 'login'; //usa operador de coalescencia nula (??) para definir 'login' se 'action' não estiver presente 
@@ -18,6 +18,9 @@ switch ($action){
         break;
     case 'register';
         $userController->register();
+        break;
+    case 'dashboard';
+        $dashboardController->index();
         break;
     default:
     $authController->login();
