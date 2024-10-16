@@ -35,6 +35,16 @@
             // retorna todos os usuarios com um array associativo
             return $stmt->fetchAll (PDO::FETCH_ASSOC);
         }
+        // Função responsável pela atualização dos dados dos usuarios na base de dados
+        public static function update($id, $data){
+            $conn = Database::getConnection();
+            // prepara uma consulta SQL para atualizar, nome, email e perfil com base no ID do usuario
+            $stmt = $conn->prepare("UPDATE usuarios SET nome = :nome, email = :email, perfil = :perfil WHERE id = :id");
+
+            $data['id'] = $id;
+
+            $stmt->execute($data);
+        }
     
     }
 ?>
